@@ -1,0 +1,88 @@
+/* font-family: "RobotoRegular"; */
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+  font-family: "RobotoRegular";
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype"); }
+
+/* font-family: "RobotoLight"; */
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+  font-family: "RobotoLight";
+  src: url("../fonts/RobotoLight/RobotoLight.eot");
+  src: url("../fonts/RobotoLight/RobotoLight.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoLight/RobotoLight.woff") format("woff"), url("../fonts/RobotoLight/RobotoLight.ttf") format("truetype"); }
+
+/* font-family: "RobotoMedium"; */
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+  font-family: "RobotoMedium";
+  src: url("../fonts/RobotoMedium/RobotoMedium.eot");
+  src: url("../fonts/RobotoMedium/RobotoMedium.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoMedium/RobotoMedium.woff") format("woff"), url("../fonts/RobotoMedium/RobotoMedium.ttf") format("truetype"); }
+
+/* font-family: "RobotoBold"; */
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+  font-family: "RobotoBold";
+  src: url("../fonts/RobotoBold/RobotoBold.eot");
+  src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoBold/RobotoBold.woff") format("woff"), url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype"); }
+
+.navbar-inverse {
+  border: none;
+  background-color: transparent; }
+  .navbar-inverse .navbar-nav > li > a {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    color: #eeeeee;
+    transition: 0.25s; }
+    .navbar-inverse .navbar-nav > li > a:hover {
+      color: #ee3b24; }
+  .navbar-inverse .navbar-brand {
+    height: 70px;
+    color: #eeeeee;
+    text-transform: uppercase;
+    line-height: 35px; }
+
+body {
+  font-size: 16px;
+  font-family: "RobotoRegular", Helvetica, Arial, sans-serif;
+  line-height: 1.5; }
+
+.page-header {
+  margin: 0;
+  padding-bottom: 0;
+  border-bottom: medium none; }
+
+.navbar-inverse .navbar-nav .current {
+  background-color: #ee3b24; }
+  .navbar-inverse .navbar-nav .current a:hover {
+    color: #eeeeee; }
+
+.carousel-inner > .item > a > img,
+.carousel-inner > .item > img {
+  width: 100%;
+  -webkit-filter: brightness(0.7) saturate(0.3);
+  filter: brightness(0.7) saturate(0.3); }
+
+.carousel-fade .carousel-inner {
+  background-color: #111111; }
+
+.carousel-inner > .item {
+  overflow: hidden;
+  max-height: 100vh; }
+
+.carousel-caption {
+  bottom: 40%; }
+  .carousel-caption h3 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 64px; }
+  .carousel-caption p {
+    padding-top: 25px;
+    text-transform: uppercase;
+    font-size: 24px; }
+
+/*# sourceMappingURL=style.css.map */
