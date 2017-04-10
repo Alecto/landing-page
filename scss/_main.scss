@@ -1,32 +1,124 @@
 
-.carousel-inner > .item > a > img,
-.carousel-inner > .item > img {
-  width: 100%;
-  filter: brightness(0.7) saturate(0.3);
+.home-section {
+  padding: 50px 0;
+
+  &__title {
+    margin: 30px 0;
+    text-align: center;
+  }
+
+  &__subtitle {
+    text-align: center;
+  }
 }
 
-.carousel-fade .carousel-inner {
-  background-color: #111111;
+
+.home-features {
+  background-color: #dddddd;
+
+  &__icon {
+    position: relative;
+    display: inline-block;
+    margin: 55px 0;
+    width: 80px;
+    height: 40px;
+    background: $base-color;
+    color: #fff;
+    font-size: 32px;
+    line-height: 40px;
+
+    &::before {
+      position: absolute;
+      top: -25px;
+      left: 0;
+      border-right: 40px solid transparent;
+      border-bottom: 25px solid $base-color;
+      border-left: 40px solid transparent;
+      content: "";
+    }
+
+    ::after {
+      position: absolute;
+      bottom: -25px;
+      left: 0;
+      border-top: 25px solid $base-color;
+      border-right: 40px solid transparent;
+      border-left: 40px solid transparent;
+      content: "";
+    }
+  }
 }
 
-.carousel-inner > .item {
-  overflow: hidden;
-  max-height: 100vh;
-}
 
-.carousel-caption {
-  bottom: 40%;
+.home-gallery {
+  &__item {
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
 
-  h3 {
-    text-transform: uppercase;
+    &:hover {
+      .home-gallery__image {
+        transform: scale(1.8);
+      }
+
+      .home-gallery__title {
+        bottom: 10%;
+      }
+
+      .home-gallery__link {
+        transform: translate(0px, 0px);
+      }
+
+      .home-gallery__caption {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__image {
+    width: 100%;
+    transition: transform 0.5s ease 0s;
+  }
+
+  &__caption {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 30px;
+    height: 100%;
+    background-color: rgba(#010101, 0.8);
+    text-align: center;
+    opacity: 0;
+    transition: all 0.5s ease 0s;
+  }
+
+  &__title {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    margin: 15% 0 10px;
+    padding: 0 15px;
+    width: 100%;
+    color: #fff;
     font-weight: bold;
-    font-size: 64px;
+    transition: bottom 0.5s ease 0s;
   }
 
-  p {
-    padding-top: 25px;
-    text-transform: uppercase;
-    font-size: 24px;
+  &__link {
+    display: inline-block;
+    margin: 10px 5px;
+    width: 36px;
+    height: 36px;
+    background: $base-color;
+    color: #fff;
+    font-size: 14px;
+    line-height: 36px;
+    transition: 0.5s;
+    transform: translate(0px, -100px);
+  }
+
+  [class*="col-"] {
+    padding: 0;
   }
 }
-
