@@ -1,0 +1,45 @@
+
+.page-footer {
+  color: #cccccc;
+  font-size: 14px;
+
+  a {
+    color: #cccccc;
+    text-decoration: none;
+
+    &:hover {
+      color: $base-color;
+    }
+  }
+}
+
+.footer-top {
+  padding: 50px 0;
+  background-color: #282828;
+
+  h3 {
+    text-transform: uppercase;
+
+    &::first-letter {
+      color: $base-color;
+    } 
+  }
+
+  ul {
+    padding-left: 30px;
+    list-style: none;
+
+    li:before {
+      position: absolute;
+      margin-left: -30px;
+      content: "\f178";
+      font-family: "FontAwesome";
+    }
+  }
+}
+
+.footer-bottom {
+  padding: 20px 0;
+  background-color: #333333;
+  text-align: center;
+}

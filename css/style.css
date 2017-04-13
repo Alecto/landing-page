@@ -197,4 +197,37 @@ body {
 .home-gallery [class*="col-"] {
   padding: 0; }
 
+.home-contact form {
+  text-align: center; }
+
+.page-footer {
+  color: #cccccc;
+  font-size: 14px; }
+  .page-footer a {
+    color: #cccccc;
+    text-decoration: none; }
+    .page-footer a:hover {
+      color: #ee3b24; }
+
+.footer-top {
+  padding: 50px 0;
+  background-color: #282828; }
+  .footer-top h3 {
+    text-transform: uppercase; }
+    .footer-top h3::first-letter {
+      color: #ee3b24; }
+  .footer-top ul {
+    padding-left: 30px;
+    list-style: none; }
+    .footer-top ul li:before {
+      position: absolute;
+      margin-left: -30px;
+      content: "\f178";
+      font-family: "FontAwesome"; }
+
+.footer-bottom {
+  padding: 20px 0;
+  background-color: #333333;
+  text-align: center; }
+
 /*# sourceMappingURL=style.css.map */
