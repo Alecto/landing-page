@@ -34,10 +34,7 @@
   border: none;
   background-color: transparent; }
   .navbar-inverse .navbar-nav > li > a {
-    padding-top: 25px;
-    padding-bottom: 25px;
-    color: #eeeeee;
-    transition: 0.25s; }
+    color: #eeeeee; }
     .navbar-inverse .navbar-nav > li > a:hover {
       color: #ee3b24; }
   .navbar-inverse .navbar-brand {
@@ -55,11 +52,22 @@
     height: 50px;
     line-height: 20px; }
 
+.navbar-toggle {
+  padding: 15px 10px; }
+  .navbar-toggle .icon-bar {
+    width: 32px; }
+    .navbar-toggle .icon-bar + .icon-bar {
+      margin-top: 8px; }
+
+.nav > li {
+  text-align: center; }
+  .nav > li:hover {
+    background-color: #333333; }
+
 .progress-bar-danger {
   background-color: #ee3b24; }
 
-.carousel-inner > .item > a > img,
-.carousel-inner > .item > img {
+.carousel-inner > .item img {
   width: 100%;
   -webkit-filter: brightness(0.7) saturate(0.3);
   filter: brightness(0.7) saturate(0.3); }
@@ -72,15 +80,27 @@
   max-height: 100vh; }
 
 .carousel-caption {
-  bottom: 40%; }
+  right: 0;
+  left: 0;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-right: 15%;
+  padding-bottom: 0;
+  padding-left: 15%;
+  width: 100%;
+  height: 100%; }
   .carousel-caption h3 {
     text-transform: uppercase;
-    font-weight: bold;
-    font-size: 64px; }
+    font-weight: bold; }
   .carousel-caption p {
-    padding-top: 25px;
-    text-transform: uppercase;
-    font-size: 24px; }
+    text-transform: uppercase; }
 
 body {
   font-size: 16px;
@@ -103,6 +123,7 @@ body {
     margin: 30px 0;
     text-align: center; }
   .home-section__subtitle {
+    margin-bottom: 30px;
     text-align: center; }
 
 .home-features {
@@ -200,6 +221,36 @@ body {
 .home-contact form {
   text-align: center; }
 
+.home-blog {
+  margin-top: 40px;
+  padding-bottom: 100px;
+  background-color: #cccccc;
+  color: #333333; }
+  .home-blog-item a {
+    color: #333333;
+    text-decoration: none; }
+  .home-blog-item:hover a, .home-blog-item:hover p {
+    color: #ffffff; }
+  .home-blog-item:hover img {
+    -webkit-filter: saturate(2);
+    filter: saturate(2); }
+  .home-blog-item:hover .home-blog-item__wrapper {
+    background-color: #ee3b24; }
+  .home-blog-item__wrapper {
+    background-color: #ffffff;
+    transition: background-color 0.25s ease 0s; }
+  .home-blog-item__image img {
+    width: 100%;
+    -webkit-filter: saturate(0.7);
+    filter: saturate(0.7);
+    transition: -webkit-filter 0.25s ease 0s;
+    transition: filter 0.25s ease 0s;
+    transition: filter 0.25s ease 0s, -webkit-filter 0.25s ease 0s; }
+  .home-blog-item__excerpt {
+    font-size: 0.8em; }
+    .home-blog-item__excerpt i {
+      padding-right: 10px; }
+
 .page-footer {
   color: #cccccc;
   font-size: 14px; }
@@ -229,5 +280,47 @@ body {
   padding: 20px 0;
   background-color: #333333;
   text-align: center; }
+
+@media (min-width: 1200px) {
+  .carousel-caption h3 {
+    font-size: 64px; }
+  .carousel-caption p {
+    padding-top: 25px;
+    font-size: 24px; } }
+
+@media (min-width: 768px) {
+  .home-blog-item {
+    padding: 0; }
+    .home-blog-item__image {
+      padding: 0; }
+  .navbar-inverse .navbar-nav > li > a {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    transition: 0.25s; } }
+
+@media (max-width: 767px) {
+  .home-blog-item {
+    padding-right: 30px;
+    padding-left: 30px; }
+    .home-blog-item__image {
+      padding: 0; }
+    .home-blog-item__excerpt {
+      padding-bottom: 30px;
+      font-size: 0.8em; }
+  .navbar-inverse {
+    background-color: rgba(0, 0, 0, 0.8); } }
+
+@media (max-aspect-ratio: 1920 / 1200) {
+  .carousel-inner > .item img {
+    max-width: none;
+    width: auto;
+    height: 100vh; }
+  .header-carousel-item__image {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center; } }
 
 /*# sourceMappingURL=style.css.map */
