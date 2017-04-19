@@ -12,6 +12,7 @@
   }
 }
 
+
 @media (min-width: 768px) {
   .home-blog {
     &-item {
@@ -30,7 +31,15 @@
       transition: 0.25s;
     }
   }
+
+  .navbar-transparent {
+    .navbar-nav > li > a {
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+  }
 }
+
 
 @media (max-width: 767px) {
   .home-blog {
@@ -50,9 +59,19 @@
   }
 
   .navbar-inverse {
-    background-color: rgba(#000000, 0.8);
+    background-color: rgba(#000000, 0.9);
   }
 }
+
+
+@media (min-aspect-ratio: 2/1) and (max-aspect-ratio: 3/1) {
+  .carousel-inner > .item {
+    img {
+      margin-top: -12%;
+    }
+  }
+}
+
 
 @media (max-aspect-ratio: 1920/1200) {
   .carousel-inner > .item {
@@ -68,3 +87,4 @@
     justify-content: center;
   }
 }
+

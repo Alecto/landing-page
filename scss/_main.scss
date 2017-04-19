@@ -180,3 +180,32 @@
     }
   }
 }
+
+
+.home-why {
+  &-banner {
+    background-image: url("../img/banner4.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &-content {
+    background-color: #dddddd;
+  }
+
+  &-item {
+    &__icon {
+      float: left;
+      margin-top: 8px;
+      width: 60px;
+      color: $base-color;
+      text-align: center;
+      font-size: 46px;
+    }
+
+    &__excerpt {
+      margin-left: 80px;
+    }
+  }
+}

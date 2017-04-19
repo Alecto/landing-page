@@ -42,22 +42,18 @@
     color: #eeeeee;
     text-transform: uppercase;
     line-height: 35px; }
+  .navbar-inverse:not(.navbar-transparent) .navbar-toggle {
+    padding: 15px 10px; }
+    .navbar-inverse:not(.navbar-transparent) .navbar-toggle .icon-bar {
+      width: 32px; }
+      .navbar-inverse:not(.navbar-transparent) .navbar-toggle .icon-bar + .icon-bar {
+        margin-top: 8px; }
 
 .navbar-transparent {
   background-color: rgba(0, 0, 0, 0.7); }
-  .navbar-transparent .navbar-nav > li > a {
-    padding-top: 15px;
-    padding-bottom: 15px; }
   .navbar-transparent .navbar-brand {
     height: 50px;
     line-height: 20px; }
-
-.navbar-toggle {
-  padding: 15px 10px; }
-  .navbar-toggle .icon-bar {
-    width: 32px; }
-    .navbar-toggle .icon-bar + .icon-bar {
-      margin-top: 8px; }
 
 .nav > li {
   text-align: center; }
@@ -251,6 +247,26 @@ body {
     .home-blog-item__excerpt i {
       padding-right: 10px; }
 
+.home-why-banner {
+  background-image: url("../img/banner4.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.home-why-content {
+  background-color: #dddddd; }
+
+.home-why-item__icon {
+  float: left;
+  margin-top: 8px;
+  width: 60px;
+  color: #ee3b24;
+  text-align: center;
+  font-size: 46px; }
+
+.home-why-item__excerpt {
+  margin-left: 80px; }
+
 .page-footer {
   color: #cccccc;
   font-size: 14px; }
@@ -296,7 +312,10 @@ body {
   .navbar-inverse .navbar-nav > li > a {
     padding-top: 25px;
     padding-bottom: 25px;
-    transition: 0.25s; } }
+    transition: 0.25s; }
+  .navbar-transparent .navbar-nav > li > a {
+    padding-top: 15px;
+    padding-bottom: 15px; } }
 
 @media (max-width: 767px) {
   .home-blog-item {
@@ -308,7 +327,11 @@ body {
       padding-bottom: 30px;
       font-size: 0.8em; }
   .navbar-inverse {
-    background-color: rgba(0, 0, 0, 0.8); } }
+    background-color: rgba(0, 0, 0, 0.9); } }
+
+@media (min-aspect-ratio: 2 / 1) and (max-aspect-ratio: 3 / 1) {
+  .carousel-inner > .item img {
+    margin-top: -12%; } }
 
 @media (max-aspect-ratio: 1920 / 1200) {
   .carousel-inner > .item img {

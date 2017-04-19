@@ -21,5 +21,5 @@
 			if (t_scroll >= 100) t_sticky.addClass('navbar-transparent');
 	  		else t_sticky.removeClass('navbar-transparent');
 		});
-    
+
 })(jQuery);                                                                 // Avoid conflicts with other libraries
