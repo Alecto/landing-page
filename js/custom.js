@@ -22,4 +22,9 @@
 	  		else t_sticky.removeClass('navbar-transparent');
 		});
 
+
+    $(document).ready(function() {
+      $('#navbar').onePageNav();
+    });
+    
 })(jQuery);                                                                 // Avoid conflicts with other libraries
