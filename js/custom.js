@@ -26,5 +26,11 @@
     $(document).ready(function() {
       $('#navbar').onePageNav();
     });
+
     
+    AOS.init({
+			duration: 500,
+      easing: 'ease-in-sine',
+    });
+
 })(jQuery);                                                                 // Avoid conflicts with other libraries
