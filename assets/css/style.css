@@ -6,8 +6,11 @@
 }
 
 .navbar-dark .navbar-toggler {
-  color: #fefefe;
-  border-color: #fefefe;
+  border-color: rgba(254, 254, 254, 0.75);
+}
+
+.navbar-dark .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.75)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
 .header-navbar {
@@ -22,8 +25,8 @@
           transition: padding 0.5s;
 }
 
-.header-navbar--scrolled.navbar {
-  background-color: rgba(1, 1, 1, 0.75) !important;
+.header-navbar--scrolled {
+  background-color: rgba(1, 1, 1, 0.75);
 }
 
 .header-navbar--scrolled .active {
@@ -90,11 +93,10 @@ button:focus {
   .navbar-expand-lg .navbar-nav .nav-item:last-of-type .nav-link {
     padding-right: 0;
   }
-  .bg-dark {
-    background-color: transparent !important;
-  }
   .header-navbar {
     padding: 0;
+
+    background-color: transparent;
   }
   .header-navbar .nav-link {
     padding-top: 30px;
@@ -112,7 +114,7 @@ button:focus {
     padding-right: 15px;
     padding-left: 15px;
   }
-  .bg-dark {
-    background-color: rgba(1, 1, 1, 0.75) !important;
+  .header-navbar {
+    background-color: rgba(1, 1, 1, 0.75);
   }
 }

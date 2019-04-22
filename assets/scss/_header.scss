@@ -2,7 +2,12 @@
   transition: background-color 0.5s;
 
   @media (min-width: $medium) {
+    background-color: transparent;
     padding: 0;
+  }
+
+  @media (max-width: $medium - 0.02) {
+    background-color: rgba($color-dark, 0.75);
   }
 
   .nav-link {
@@ -15,9 +20,7 @@
   }
 
   &--scrolled {
-    &.navbar {
-      background-color: rgba($color-dark, 0.75) !important;
-    }
+    background-color: rgba($color-dark, 0.75);
 
     .nav-link {
       @media (min-width: $medium) {
