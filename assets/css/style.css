@@ -360,18 +360,18 @@ body {
   padding-right: 10px;
 }
 
-.home-why-banner {
+.home-advantages-banner {
   background-image: url("../img/banner4.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
 }
 
-.home-why-content {
+.home-advantages-content {
   background-color: #dddddd;
 }
 
-.home-why-item__icon {
+.home-advantages-item__icon {
   float: left;
 
   width: 60px;
@@ -384,7 +384,7 @@ body {
   font-size: 46px;
 }
 
-.home-why-item__excerpt {
+.home-advantages-item__excerpt {
   margin-left: 80px;
 }
 
