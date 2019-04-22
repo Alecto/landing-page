@@ -1,9 +1,17 @@
 @import "variables";
+@import "skins";
 @import "mixins";
+
 @import "bootstrap-theming";
 @import "common";
-@import "header";
-@import "main";
-@import "sidebar";
+
+@import "sections/slider";
+@import "sections/about";
+@import "sections/features";
+@import "sections/gallery";
+@import "sections/chess";
+@import "sections/advantages";
+@import "sections/contacts";
+
 @import "footer";
-@import "media";
+
