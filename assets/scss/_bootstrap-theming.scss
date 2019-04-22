@@ -1,0 +1,47 @@
+
+
+.navbar-expand-lg {
+  .navbar-nav {
+    .nav-item {
+      @media (min-width: $medium) {
+        &:last-of-type {
+          .nav-link {
+            padding-right: 0;
+          }
+        }
+      }
+    }
+
+    .nav-link {
+      padding-right: $gap * 4 / 3;
+      padding-left: $gap * 4 / 3;
+
+      color: $color-light;
+    }
+  }
+
+  @media (max-width: $medium - 0.02) {
+    > .container,
+    > .container-fluid {
+      padding-right: $gap;
+      padding-left: $gap;
+    }
+  }
+}
+
+.navbar-dark {
+  .navbar-toggler {
+    color: $color-light;
+    border-color: $color-light;
+  }
+}
+
+.bg-dark {
+  @media (min-width: $medium) {
+    background-color: transparent !important;
+  }
+
+  @media (max-width: $medium - 0.02) {
+    background-color: rgba($color-dark, 0.75) !important;
+  }
+}

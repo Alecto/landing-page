@@ -1,3 +1,13 @@
 $font-header: "Roboto Slab", serif;
 $font-main: "Roboto", sans-serif;
 $font-size: 16px;
+
+$large: 1200px;
+$medium: 992px;
+$small: 768px;
+$xsmall: 576px;
+
+$gap: 15px;
+
+@media (min-width: $medium) {}
+@media (max-width: $medium - 0.02) {}

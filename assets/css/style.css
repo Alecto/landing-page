@@ -1,3 +1,39 @@
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-right: 20px;
+  padding-left: 20px;
+
+  color: #fefefe;
+}
+
+.navbar-dark .navbar-toggler {
+  color: #fefefe;
+  border-color: #fefefe;
+}
+
+.header-navbar {
+  -webkit-transition: background-color 0.5s;
+       -o-transition: background-color 0.5s;
+          transition: background-color 0.5s;
+}
+
+.header-navbar .nav-link {
+  -webkit-transition: padding 0.5s;
+       -o-transition: padding 0.5s;
+          transition: padding 0.5s;
+}
+
+.header-navbar--scrolled.navbar {
+  background-color: rgba(1, 1, 1, 0.75) !important;
+}
+
+.header-navbar--scrolled .active {
+  -webkit-transition: background-color 0.25s ease 0.25s;
+       -o-transition: background-color 0.25s ease 0.25s;
+          transition: background-color 0.25s ease 0.25s;
+
+  background-color: #ee3b24;
+}
+
 html {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -31,6 +67,10 @@ h6 {
   font-family: "Roboto Slab", serif;
 }
 
+button:focus {
+  outline: none;
+}
+
 .slider__item {
   position: relative;
 
@@ -44,4 +84,35 @@ h6 {
   right: 0;
   bottom: 0;
   left: 0;
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav .nav-item:last-of-type .nav-link {
+    padding-right: 0;
+  }
+  .bg-dark {
+    background-color: transparent !important;
+  }
+  .header-navbar {
+    padding: 0;
+  }
+  .header-navbar .nav-link {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .header-navbar--scrolled .nav-link {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .navbar-expand-lg > .container,
+  .navbar-expand-lg > .container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .bg-dark {
+    background-color: rgba(1, 1, 1, 0.75) !important;
+  }
 }

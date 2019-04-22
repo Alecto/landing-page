@@ -1,0 +1,35 @@
+.header-navbar {
+  transition: background-color 0.5s;
+
+  @media (min-width: $medium) {
+    padding: 0;
+  }
+
+  .nav-link {
+    transition: padding 0.5s;
+
+    @media (min-width: $medium) {
+      padding-top: $gap * 2;
+      padding-bottom: $gap * 2;
+    }
+  }
+
+  &--scrolled {
+    &.navbar {
+      background-color: rgba($color-dark, 0.75) !important;
+    }
+
+    .nav-link {
+      @media (min-width: $medium) {
+        padding-top: $gap;
+        padding-bottom: $gap;
+      }
+    }
+
+    .active {
+      transition: background-color 0.25s ease 0.25s;
+
+      background-color: $color-accent;
+    }
+  }
+}
