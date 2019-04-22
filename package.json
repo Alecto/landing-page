@@ -6,6 +6,8 @@
   "author": "Andrey Fomenko <fomenkoandrey1978@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.8.1"
+    "@fortawesome/fontawesome-free": "^5.8.1",
+    "bootstrap": "3",
+    "jquery": "^3.4.0"
   }
 }

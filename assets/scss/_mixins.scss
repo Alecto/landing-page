@@ -2,8 +2,9 @@
 @mixin text-shortener {
   display: block;
   overflow: hidden;
-  text-overflow: ellipsis;
+
   white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 @mixin bg-color($a: 0, $rgb: 0) {
@@ -13,16 +14,20 @@
 @mixin block-header {
   margin: 0;
   padding-bottom: 10px;
+
   border-bottom: 1px solid #333333;
 }
 
 @mixin visually-hidden {
   position: absolute;
+
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+
   width: 1px;
   height: 1px;
   margin: -1px;
-  border: 0;
   padding: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
+
+  border: 0;
+}

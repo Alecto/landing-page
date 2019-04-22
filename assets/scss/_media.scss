@@ -7,6 +7,7 @@
 
     p {
       padding-top: 25px;
+
       font-size: 24px;
     }
   }
@@ -28,6 +29,7 @@
     .navbar-nav > li > a {
       padding-top: 25px;
       padding-bottom: 25px;
+
       transition: 0.25s;
     }
   }
@@ -53,6 +55,7 @@
 
       &__excerpt {
         padding-bottom: 30px;
+
         font-size: 0.8em;
       }
     }
@@ -76,15 +79,16 @@
 @media (max-aspect-ratio: 1920/1200) {
   .carousel-inner > .item {
     img {
-      max-width: none;
       width: auto;
+      max-width: none;
       height: 100vh;
     }
   }
 
   .header-carousel-item__image {
     display: flex;
+
     justify-content: center;
   }
 }
-
+

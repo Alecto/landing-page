@@ -7,14 +7,17 @@
     color: #eeeeee;
 
     &:hover {
-    color: $base-color;
+      color: $base-color;
     }
   }
 
   .navbar-brand {
     height: 70px;
-    color: #eeeeee;
+
     text-transform: uppercase;
+
+    color: #eeeeee;
+
     line-height: 35px;
   }
 
@@ -39,6 +42,7 @@
 
   .navbar-brand {
     height: 50px;
+
     line-height: 20px;
   }
 }
@@ -60,6 +64,7 @@
 
 .carousel-inner > .item img {
   width: 100%;
+
   filter: brightness(0.7) saturate(0.3);
 }
 
@@ -69,23 +74,28 @@
 
 .carousel-inner > .item {
   overflow: hidden;
+
   max-height: 100vh;
 }
 
 .carousel-caption {
   right: 0;
   left: 0;
+
   display: flex;
-  align-items: center;
-  justify-content: center;
+
+  width: 100%;
+  height: 100%;
   padding-right: 15%;
   padding-bottom: 0;
   padding-left: 15%;
-  width: 100%;
-  height: 100%;
+
+  align-items: center;
+  justify-content: center;
 
   h3 {
     text-transform: uppercase;
+
     font-weight: bold;
   }
 
@@ -93,4 +103,4 @@
     text-transform: uppercase;
   }
 }
-
+

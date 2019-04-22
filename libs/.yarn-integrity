@@ -6,10 +6,14 @@
   "flags": [],
   "linkedModules": [],
   "topLevelPatterns": [
-    "@fortawesome/fontawesome-free@^5.8.1"
+    "@fortawesome/fontawesome-free@^5.8.1",
+    "bootstrap@3",
+    "jquery@^3.4.0"
   ],
   "lockfileEntries": {
-    "@fortawesome/fontawesome-free@^5.8.1": "https://registry.yarnpkg.com/@fortawesome/fontawesome-free/-/fontawesome-free-5.8.1.tgz#cbafbfe8894c4e3e3c3a9da6774e249ac1f2da8b"
+    "@fortawesome/fontawesome-free@^5.8.1": "https://registry.yarnpkg.com/@fortawesome/fontawesome-free/-/fontawesome-free-5.8.1.tgz#cbafbfe8894c4e3e3c3a9da6774e249ac1f2da8b",
+    "bootstrap@3": "https://registry.yarnpkg.com/bootstrap/-/bootstrap-3.4.1.tgz#c3a347d419e289ad11f4033e3c4132b87c081d72",
+    "jquery@^3.4.0": "https://registry.yarnpkg.com/jquery/-/jquery-3.4.0.tgz#8de513fa0fa4b2c7d2e48a530e26f0596936efdf"
   },
   "files": [],
   "artifacts": {}
