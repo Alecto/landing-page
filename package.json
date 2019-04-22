@@ -1,0 +1,11 @@
+{
+  "name": "landing-page",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Alecto/landing-page.git",
+  "author": "Andrey Fomenko <fomenkoandrey1978@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.8.1"
+  }
+}

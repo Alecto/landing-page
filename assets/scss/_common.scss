@@ -5,3 +5,15 @@ body {
   font-family: "RobotoRegular", Helvetica, Arial, sans-serif;
   line-height: 1.5;
 }
+
+.right,
+.left {
+  i {
+    position: absolute;
+    top: 50%;
+    z-index: 5;
+    display: inline-block;
+    margin-top: -10px;
+    font-size: 30px;
+  }
+}
