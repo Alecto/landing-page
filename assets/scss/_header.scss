@@ -1,36 +1,39 @@
 .header-navbar {
   transition: background-color 0.5s;
 
-  @media (min-width: $medium) {
-    background-color: transparent;
+  @media (min-width: $large) {
     padding: 0;
+
+    background-color: transparent;
   }
 
-  @media (max-width: $medium - 0.02) {
+  @media (max-width: $large - 0.02) {
     background-color: rgba($color-dark, 0.75);
   }
 
   .nav-link {
     transition: padding 0.5s;
 
-    @media (min-width: $medium) {
+    @media (min-width: $large) {
       padding-top: $gap * 2;
       padding-bottom: $gap * 2;
     }
   }
 
   &--scrolled {
-    background-color: rgba($color-dark, 0.75);
+    @media (min-width: $large) {
+      background-color: rgba($color-dark, 0.75);
+    }
 
     .nav-link {
-      @media (min-width: $medium) {
+      @media (min-width: $large) {
         padding-top: $gap;
         padding-bottom: $gap;
       }
     }
 
     .active {
-      transition: background-color 0.25s ease 0.25s;
+      transition: background-color 0.5s;
 
       background-color: $color-accent;
     }

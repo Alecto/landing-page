@@ -1,3 +1,7 @@
+.about__title {
+  text-align: center;
+}
+
 .navbar-expand-lg .navbar-nav .nav-link {
   padding-right: 20px;
   padding-left: 20px;
@@ -13,6 +17,10 @@
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.75)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
+.bg-danger {
+  background-color: #ee3b24 !important;
+}
+
 .header-navbar {
   -webkit-transition: background-color 0.5s;
        -o-transition: background-color 0.5s;
@@ -25,14 +33,10 @@
           transition: padding 0.5s;
 }
 
-.header-navbar--scrolled {
-  background-color: rgba(1, 1, 1, 0.75);
-}
-
 .header-navbar--scrolled .active {
-  -webkit-transition: background-color 0.25s ease 0.25s;
-       -o-transition: background-color 0.25s ease 0.25s;
-          transition: background-color 0.25s ease 0.25s;
+  -webkit-transition: background-color 0.5s;
+       -o-transition: background-color 0.5s;
+          transition: background-color 0.5s;
 
   background-color: #ee3b24;
 }
@@ -89,9 +93,49 @@ button:focus {
   left: 0;
 }
 
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+
+  min-height: 100vh;
+
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.about__item {
+  margin-bottom: 30px;
+}
+
+@media (max-width: 768px) and (min-width: 575.98px) {
+  .about {
+    padding: 60px 0;
+  }
+  .about__title {
+    margin: 0 0 30px;
+  }
+}
+
+@media (max-width: 992px) and (min-width: 767.98px) {
+  .about {
+    padding: 75px 0;
+  }
+  .about__title {
+    margin: 0 0 37.5px;
+  }
+}
+
 @media (min-width: 992px) {
-  .navbar-expand-lg .navbar-nav .nav-item:last-of-type .nav-link {
-    padding-right: 0;
+  .about {
+    padding: 90px 0;
+  }
+  .about__title {
+    margin: 0 0 45px;
+  }
+  .progress {
+    height: 20px;
   }
   .header-navbar {
     padding: 0;
@@ -102,9 +146,21 @@ button:focus {
     padding-top: 30px;
     padding-bottom: 30px;
   }
+  .header-navbar--scrolled {
+    background-color: rgba(1, 1, 1, 0.75);
+  }
   .header-navbar--scrolled .nav-link {
     padding-top: 15px;
     padding-bottom: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .about {
+    padding: 45px 0;
+  }
+  .about__title {
+    margin: 0 0 22.5px;
   }
 }
 

@@ -2,12 +2,16 @@ $font-header: "Roboto Slab", serif;
 $font-main: "Roboto", sans-serif;
 $font-size: 16px;
 
-$large: 1200px;
-$medium: 992px;
-$small: 768px;
-$xsmall: 576px;
+$xlarge: 1200px;
+$large: 992px;
+$medium: 768px;
+$small: 576px;
 
 $gap: 15px;
 
-@media (min-width: $medium) {}
-@media (max-width: $medium - 0.02) {}
+@media (min-width: $xlarge) {}
+@media (min-width: $large) {}
+@media (max-width: $large) and (min-width: $medium - 0.02) {}
+@media (max-width: $large - 0.02) {}
+@media (max-width: $medium) and (min-width: $small - 0.02) {}
+@media (max-width: $small) {}

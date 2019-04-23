@@ -1,0 +1,37 @@
+%section {
+  @media (min-width: $large) {
+    padding: ($gap * 6) 0;
+  }
+
+  @media (max-width: $large) and (min-width: $medium - 0.02) {
+    padding: ($gap * 5) 0;
+  }
+
+  @media (max-width: $medium) and (min-width: $small - 0.02) {
+    padding: ($gap * 4) 0;
+  }
+
+  @media (max-width: $small) {
+    padding: ($gap * 3) 0;
+  }
+}
+
+%section-title {
+  text-align: center;
+
+  @media (min-width: $large) {
+    margin: 0 0 ($gap * 3);
+  }
+
+  @media (max-width: $large) and (min-width: $medium - 0.02) {
+    margin: 0 0 ($gap * 2.5);
+  }
+
+  @media (max-width: $medium) and (min-width: $small - 0.02) {
+    margin: 0 0 ($gap * 2);
+  }
+
+  @media (max-width: $small) {
+    margin: 0 0 ($gap * 1.5);
+  }
+}

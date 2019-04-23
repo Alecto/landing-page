@@ -1,15 +1,5 @@
 .navbar-expand-lg {
   .navbar-nav {
-    .nav-item {
-      @media (min-width: $medium) {
-        &:last-of-type {
-          .nav-link {
-            padding-right: 0;
-          }
-        }
-      }
-    }
-
     .nav-link {
       padding-right: $gap * 4 / 3;
       padding-left: $gap * 4 / 3;
@@ -18,7 +8,7 @@
     }
   }
 
-  @media (max-width: $medium - 0.02) {
+  @media (max-width: $large - 0.02) {
     > .container,
     > .container-fluid {
       padding-right: $gap;
@@ -35,4 +25,14 @@
       background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.75)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
     }
   }
+}
+
+.progress {
+  @media (min-width: $large) {
+    height: $gap * 4 / 3;
+  }
+}
+
+.bg-danger {
+  background-color: $color-accent !important;
 }
