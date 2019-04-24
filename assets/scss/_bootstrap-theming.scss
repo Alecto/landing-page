@@ -8,7 +8,7 @@
     }
   }
 
-  @media (max-width: $large - 0.02) {
+  @include lg {
     > .container,
     > .container-fluid {
       padding-right: $gap;
@@ -28,7 +28,7 @@
 }
 
 .progress {
-  @media (min-width: $large) {
+  @include lg-min {
     height: $gap * 4 / 3;
   }
 }

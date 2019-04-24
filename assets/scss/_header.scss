@@ -1,32 +1,32 @@
 .header-navbar {
   transition: background-color 0.5s;
 
-  @media (min-width: $large) {
+  @include lg-min {
     padding: 0;
 
     background-color: transparent;
   }
 
-  @media (max-width: $large - 0.02) {
+  @include lg {
     background-color: rgba($color-dark, 0.75);
   }
 
   .nav-link {
     transition: padding 0.5s;
 
-    @media (min-width: $large) {
+    @include lg-min {
       padding-top: $gap * 2;
       padding-bottom: $gap * 2;
     }
   }
 
   &--scrolled {
-    @media (min-width: $large) {
+    @include lg-min {
       background-color: rgba($color-dark, 0.75);
     }
 
     .nav-link {
-      @media (min-width: $large) {
+      @include lg-min {
         padding-top: $gap;
         padding-bottom: $gap;
       }

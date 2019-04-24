@@ -1,17 +1,18 @@
 %section {
-  @media (min-width: $large) {
+  @include lg-min {
     padding: ($gap * 6) 0;
   }
 
-  @media (max-width: $large) and (min-width: $medium - 0.02) {
+  @include lg-md {
     padding: ($gap * 5) 0;
   }
 
-  @media (max-width: $medium) and (min-width: $small - 0.02) {
+  @include md-sm {
     padding: ($gap * 4) 0;
+
   }
 
-  @media (max-width: $small) {
+  @include sm {
     padding: ($gap * 3) 0;
   }
 }
@@ -19,19 +20,19 @@
 %section-title {
   text-align: center;
 
-  @media (min-width: $large) {
+  @include lg-min {
     margin: 0 0 ($gap * 3);
   }
 
-  @media (max-width: $large) and (min-width: $medium - 0.02) {
+  @include lg-md {
     margin: 0 0 ($gap * 2.5);
   }
 
-  @media (max-width: $medium) and (min-width: $small - 0.02) {
+  @include md-sm {
     margin: 0 0 ($gap * 2);
   }
 
-  @media (max-width: $small) {
+  @include sm {
     margin: 0 0 ($gap * 1.5);
   }
 }
