@@ -1,4 +1,9 @@
 %section {
+  display: flex;
+
+  min-height: 100vh;
+
+  align-items: center;
   @include lg-min {
     padding: ($gap * 6) 0;
   }

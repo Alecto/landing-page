@@ -1,4 +1,18 @@
-.about__title {
+.about,
+.features {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+
+  min-height: 100vh;
+
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.about__title,
+.features__title {
   text-align: center;
 }
 
@@ -97,45 +111,98 @@ button:focus {
   left: 0;
 }
 
-.about {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-
-  min-height: 100vh;
-
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 .about__item {
   margin-bottom: 30px;
 }
 
+.features {
+  background-color: #e5e5e5;
+}
+
+.feature-item {
+  margin-top: 7.5px;
+  margin-bottom: 7.5px;
+}
+
+.feature-item__icon {
+  position: relative;
+
+  display: block;
+
+  width: 80px;
+  height: 40px;
+  margin: 55px auto;
+
+  text-align: center;
+
+  color: #ffffff;
+  background: #ee3b24;
+
+  font-size: 2rem;
+  line-height: 40px;
+}
+
+.feature-item__icon::before {
+  position: absolute;
+  top: -25px;
+  left: 0;
+
+  content: "";
+
+  border-right: 40px solid transparent;
+  border-bottom: 25px solid #ee3b24;
+  border-left: 40px solid transparent;
+}
+
+.feature-item__icon::after {
+  position: absolute;
+  bottom: -25px;
+  left: 0;
+
+  content: "";
+
+  border-top: 25px solid #ee3b24;
+  border-right: 40px solid transparent;
+  border-left: 40px solid transparent;
+}
+
+.feature-item__title {
+  text-align: center;
+}
+
+.feature-item__description {
+  text-align: center;
+}
+
 @media (max-width: 767px) and (min-width: 576px) {
-  .about {
+  .about,
+  .features {
     padding: 60px 0;
   }
-  .about__title {
+  .about__title,
+  .features__title {
     margin: 0 0 30px;
   }
 }
 
 @media (max-width: 991px) and (min-width: 768px) {
-  .about {
+  .about,
+  .features {
     padding: 75px 0;
   }
-  .about__title {
+  .about__title,
+  .features__title {
     margin: 0 0 37.5px;
   }
 }
 
 @media (min-width: 992px) {
-  .about {
+  .about,
+  .features {
     padding: 90px 0;
   }
-  .about__title {
+  .about__title,
+  .features__title {
     margin: 0 0 45px;
   }
   .progress {
@@ -162,10 +229,12 @@ button:focus {
 }
 
 @media (max-width: 575px) {
-  .about {
+  .about,
+  .features {
     padding: 45px 0;
   }
-  .about__title {
+  .about__title,
+  .features__title {
     margin: 0 0 22.5px;
   }
 }

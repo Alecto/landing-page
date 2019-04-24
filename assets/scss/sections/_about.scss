@@ -1,9 +1,4 @@
 .about {
-  display: flex;
-
-  min-height: 100vh;
-
-  align-items: center;
   @extend %section;
 
   &__title {
@@ -13,4 +8,4 @@
   &__item {
     margin-bottom: $gap * 2;
   }
-}
+}
