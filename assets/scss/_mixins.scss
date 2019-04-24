@@ -31,6 +31,48 @@
   border: 0;
 }
 
+@mixin icon($base-size: 40px, $fz: 2rem) {
+  position: relative;
+
+  display: block;
+
+  width: $base-size * 2;
+  height: $base-size;
+  margin: ($base-size * 1.35) auto;
+
+  text-align: center;
+
+  color: #ffffff;
+  background: $color-accent;
+
+  font-size: $fz;
+  line-height: $base-size;
+
+  &::before {
+    position: absolute;
+    top: -$base-size * 0.625;
+    left: 0;
+
+    content: "";
+
+    border-right: $base-size solid transparent;
+    border-bottom: ($base-size * 0.625) solid $color-accent;
+    border-left: $base-size solid transparent;
+  }
+
+  &::after {
+    position: absolute;
+    bottom: -($base-size * 0.625);
+    left: 0;
+
+    content: "";
+
+    border-top: ($base-size * 0.625) solid $color-accent;
+    border-right: $base-size solid transparent;
+    border-left: $base-size solid transparent;
+  }
+}
+
 @mixin xl {
   @media (max-width: $xl - 1) {
     @content
@@ -95,4 +137,4 @@
   @media (max-width: $md - 1) and (min-width: $sm) {
     @content
   }
-}
+}
