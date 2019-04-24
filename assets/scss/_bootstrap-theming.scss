@@ -1,18 +1,17 @@
 .navbar-expand-lg {
+  @include lg {
+    > .container,
+    > .container-fluid {
+      padding-right: $gap;
+      padding-left: $gap;
+    }
+  }
   .navbar-nav {
     .nav-link {
       padding-right: $gap * 4 / 3;
       padding-left: $gap * 4 / 3;
 
       color: $color-light;
-    }
-  }
-
-  @include lg {
-    > .container,
-    > .container-fluid {
-      padding-right: $gap;
-      padding-left: $gap;
     }
   }
 }
@@ -35,4 +34,4 @@
 
 .bg-danger {
   background-color: $color-accent !important;
-}
+}

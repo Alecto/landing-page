@@ -22,15 +22,19 @@
 }
 
 .header-navbar {
-  -webkit-transition: background-color 0.5s;
-       -o-transition: background-color 0.5s;
-          transition: background-color 0.5s;
+  -webkit-transition: background-color 0.5s, padding 0.25s;
+       -o-transition: background-color 0.5s, padding 0.25s;
+          transition: background-color 0.5s, padding 0.25s;
 }
 
-.header-navbar .nav-link {
-  -webkit-transition: padding 0.5s;
-       -o-transition: padding 0.5s;
-          transition: padding 0.5s;
+.header-navbar .nav-item:not(.active):hover,
+.header-navbar .nav-item:not(.active):focus {
+  background-color: rgba(254, 254, 254, 0.85);
+}
+
+.header-navbar .nav-item:not(.active):hover .nav-link,
+.header-navbar .nav-item:not(.active):focus .nav-link {
+  color: #010101;
 }
 
 .header-navbar--scrolled .active {
@@ -138,20 +142,22 @@ button:focus {
     height: 20px;
   }
   .header-navbar {
-    padding: 0;
+    padding: 20px 0;
 
     background-color: transparent;
   }
   .header-navbar .nav-link {
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
-  .header-navbar--scrolled {
-    background-color: rgba(1, 1, 1, 0.75);
-  }
-  .header-navbar--scrolled .nav-link {
     padding-top: 15px;
     padding-bottom: 15px;
+  }
+  .header-navbar--scrolled {
+    padding: 0;
+
+    background-color: rgba(1, 1, 1, 0.75);
+  }
+  .header-navbar--scrolled .nav-item {
+    margin-top: 0;
+    margin-bottom: 0;
   }
 }
 
