@@ -2,32 +2,28 @@
   transition: background-color 0.5s, padding 0.25s;
 
   @include lg-min {
-    padding: 20px 0;
+    padding: $gap 0;
 
     background-color: transparent;
   }
   @include lg {
-    background-color: rgba($color-dark, 0.75);
+    background-color: rgba($color-dark, 0.85);
   }
 
   .nav-item {
-    &:not(.active) {
-      &:hover,
-      &:focus {
-        background-color: rgba($color-light, 0.85);
-
-        .nav-link {
-          color: $color-dark;
-        }
-      }
-    }
+    @extend %link-border-not-active-on-hover;
   }
 
   .nav-link {
+    position: relative;
+
+    overflow: hidden;
+
     @include lg-min {
       padding-top: $gap;
       padding-bottom: $gap;
     }
+    @extend %link-border;
   }
 }
 
@@ -35,7 +31,7 @@
   @include lg-min {
     padding: 0;
 
-    background-color: rgba($color-dark, 0.75);
+    background-color: rgba($color-dark, 0.85);
   }
 
   .nav-item {
@@ -46,9 +42,11 @@
   }
 
   .active {
-    transition: background-color 0.5s;
+    .nav-link {
+      color: $color-accent !important;
+      text-shadow: 0 0 1px $color-accent;
 
-    background-color: $color-accent;
+      @extend %link-border-active;
+    }
   }
 }
-
