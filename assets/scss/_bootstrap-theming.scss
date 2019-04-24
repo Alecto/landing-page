@@ -8,6 +8,7 @@
 
     &:hover {
       color: $base-color;
+      text-shadow: 0 0 1px $base-color;
     }
   }
 
@@ -33,6 +34,14 @@
         }
       }
     }
+
+    .navbar-nav .current {
+      background-color: transparent;
+    }
+
+    .nav > li:hover {
+      background: transparent;
+    }
   }
 }
 
@@ -52,7 +61,7 @@
   text-align: center;
 
   &:hover {
-    background-color: #333333;
+    background-color: #000000;
   }
 }
 
@@ -103,4 +112,3 @@
     text-transform: uppercase;
   }
 }
-
