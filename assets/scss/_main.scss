@@ -46,7 +46,7 @@
       border-left: 40px solid transparent;
     }
 
-    ::after {
+    &::after {
       position: absolute;
       bottom: -25px;
       left: 0;
@@ -59,7 +59,6 @@
     }
   }
 }
-
 
 .home-gallery {
   &__item {

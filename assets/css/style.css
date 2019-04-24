@@ -188,7 +188,7 @@ body {
   border-left: 40px solid transparent;
 }
 
-.home-features__icon ::after {
+.home-features__icon::after {
   position: absolute;
   bottom: -25px;
   left: 0;
