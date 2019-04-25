@@ -2,8 +2,6 @@
   let $navbar = $('#header-navbar');
 
   $(window).scroll(() => {
-
-
     const currentScrollPos = $(window).scrollTop();
     const headerClassOnScroll = 'header-navbar--scrolled';
     const scrollPos = 100;
