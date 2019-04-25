@@ -155,6 +155,10 @@ a:focus {
   left: 0;
 }
 
+.slider h3 {
+  color: #fefefe;
+}
+
 .about__item {
   margin-bottom: 30px;
 }
