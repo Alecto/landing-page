@@ -1,13 +1,15 @@
 %header {
-  font-family: $font-header;
   color: $color-dark;
+
+  font-family: $font-header;
 }
 
 %section {
   display: flex;
-  flex-wrap: wrap;
+
   min-height: 100vh;
 
+  flex-wrap: wrap;
   align-items: center;
   @include lg-min {
     padding: ($gap * 6) 0;
@@ -102,4 +104,4 @@
       bottom: 4px;
     }
   }
-}
+}

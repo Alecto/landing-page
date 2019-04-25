@@ -4,8 +4,9 @@ html {
 }
 
 body {
-  font-family: $font-main;
   color: $color-gray;
+
+  font-family: $font-main;
 }
 
 h1 {
@@ -26,6 +27,7 @@ h4 {
 
 h5 {
   font-size: 1.125rem;
+
   @extend %header;
 }
 
@@ -42,4 +44,4 @@ a {
   &:focus {
     text-decoration: none;
   }
-}
+}
