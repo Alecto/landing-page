@@ -5,32 +5,41 @@ html {
 
 body {
   font-family: $font-main;
+  color: $color-gray;
 }
 
 h1 {
-  font-family: $font-header;
+  @extend %header;
 }
 
 h2 {
-  font-family: $font-header;
+  @extend %header;
 }
 
 h3 {
-  font-family: $font-header;
+  @extend %header;
 }
 
 h4 {
-  font-family: $font-header;
+  @extend %header;
 }
 
 h5 {
-  font-family: $font-header;
+  font-size: 1.125rem;
+  @extend %header;
 }
 
 h6 {
-  font-family: $font-header;
+  @extend %header;
 }
 
 button:focus {
   outline: none;
-}
+}
+
+a {
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+}

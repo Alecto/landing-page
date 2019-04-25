@@ -6,6 +6,10 @@
   &__title {
     @extend %section-title;
   }
+  
+  &__description {
+    @extend %section-description;
+  }
 }
 
 .feature-item {

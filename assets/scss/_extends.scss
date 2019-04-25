@@ -1,6 +1,11 @@
+%header {
+  font-family: $font-header;
+  color: $color-dark;
+}
+
 %section {
   display: flex;
-
+  flex-wrap: wrap;
   min-height: 100vh;
 
   align-items: center;
@@ -35,6 +40,17 @@
   }
 }
 
+%section-description {
+  text-align: center;
+
+  @include md-min {
+    margin-bottom: $gap * 3;
+  }
+  @include md {
+    margin-bottom: $gap * 2;
+  }
+}
+
 %link-border {
   &::after {
     position: absolute;
@@ -63,7 +79,7 @@
 
           height: 3px;
 
-          transition: 0.5s ease-in-out;
+          transition: bottom 0.5s, opacity 0.5s;
 
           opacity: 1;
         }
@@ -75,8 +91,6 @@
 %link-border-active {
   &::after {
     height: 3px;
-
-    transition: 0.5s ease-in-out;
 
     opacity: 1;
     background-color: $color-accent;
