@@ -40,8 +40,11 @@ button:focus {
 }
 
 a {
+  color: $color-dark;
+
   &:hover,
   &:focus {
+    color: $color-accent;
     text-decoration: none;
   }
-}
+}

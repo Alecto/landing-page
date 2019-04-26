@@ -11,7 +11,8 @@ h6 {
 
 .about,
 .features,
-.gallery {
+.gallery,
+.blog {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -27,12 +28,14 @@ h6 {
 
 .about__title,
 .features__title,
-.gallery__title {
+.gallery__title,
+.blog__title {
   text-align: center;
 }
 
 .features__description,
-.gallery__description {
+.gallery__description,
+.blog__description {
   text-align: center;
 }
 
@@ -135,9 +138,15 @@ button:focus {
   outline: none;
 }
 
+a {
+  color: #010101;
+}
+
 a:hover,
 a:focus {
   text-decoration: none;
+
+  color: #ee3b24;
 }
 
 .slider__item {
@@ -325,15 +334,97 @@ a:focus {
           transform: translateY(15px);
 }
 
+.blog {
+  background-color: #ececec;
+}
+
+.blog-item__image {
+  overflow: hidden;
+
+  padding: 0;
+}
+
+.blog-item__image img {
+  width: 100%;
+
+  -webkit-transition: -webkit-filter 0.5s, -webkit-transform 0.5s;
+       -o-transition:         filter 0.5s, transform 0.5s;
+          transition: -webkit-filter 0.5s, -webkit-transform 0.5s;
+          transition:         filter 0.5s, transform 0.5s;
+          transition:         filter 0.5s, transform 0.5s, -webkit-filter 0.5s, -webkit-transform 0.5s;
+
+  -webkit-filter: saturate(0.75);
+          filter: saturate(0.75);
+}
+
+.blog-item__post {
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  -webkit-transition: background-color 0.25s;
+       -o-transition: background-color 0.25s;
+          transition: background-color 0.25s;
+
+  background-color: #fefefe;
+}
+
+.blog-item__date {
+  margin: 15px 0;
+
+  color: #6e6e6e;
+
+  font-size: 0.875rem;
+}
+
+.blog-item__excerpt {
+  margin: 15px 0 30px;
+
+  color: #545454;
+
+  font-size: 0.875rem;
+}
+
+.blog-item a:hover .blog-item__image img,
+.blog-item a:focus .blog-item__image img {
+  -webkit-transform: scale(1.25);
+      -ms-transform: scale(1.25);
+          transform: scale(1.25);
+
+  -webkit-filter: saturate(1.5);
+          filter: saturate(1.5);
+}
+
+.blog-item a:hover .blog-item__post,
+.blog-item a:focus .blog-item__post {
+  background-color: #ee3b24;
+}
+
+.blog-item a:hover .blog-item__title,
+.blog-item a:focus .blog-item__title {
+  color: #fefefe;
+}
+
+.blog-item a:hover .blog-item__date,
+.blog-item a:focus .blog-item__date {
+  color: #fefefe;
+}
+
+.blog-item a:hover .blog-item__excerpt,
+.blog-item a:focus .blog-item__excerpt {
+  color: #fefefe;
+}
+
 @media (max-width: 767px) and (min-width: 576px) {
   .about,
   .features,
-  .gallery {
-    padding: 60px 0;
+  .gallery,
+  .blog {
+    padding: 90px 0 60px;
   }
   .about__title,
   .features__title,
-  .gallery__title {
+  .gallery__title,
+  .blog__title {
     margin: 0 0 30px;
   }
 }
@@ -351,19 +442,22 @@ a:focus {
 @media (max-width: 991px) and (min-width: 768px) {
   .about,
   .features,
-  .gallery {
-    padding: 75px 0;
+  .gallery,
+  .blog {
+    padding: 105px 0 75px;
   }
   .about__title,
   .features__title,
-  .gallery__title {
+  .gallery__title,
+  .blog__title {
     margin: 0 0 37.5px;
   }
 }
 
 @media (min-width: 768px) {
   .features__description,
-  .gallery__description {
+  .gallery__description,
+  .blog__description {
     margin-bottom: 45px;
   }
 }
@@ -371,12 +465,14 @@ a:focus {
 @media (min-width: 992px) {
   .about,
   .features,
-  .gallery {
-    padding: 90px 0;
+  .gallery,
+  .blog {
+    padding: 105px 0 90px;
   }
   .about__title,
   .features__title,
-  .gallery__title {
+  .gallery__title,
+  .blog__title {
     margin: 0 0 45px;
   }
   .header-navbar--scrolled .active .nav-link::after {
@@ -408,12 +504,14 @@ a:focus {
 @media (max-width: 575px) {
   .about,
   .features,
-  .gallery {
-    padding: 45px 0;
+  .gallery,
+  .blog {
+    padding: 90px 0 45px;
   }
   .about__title,
   .features__title,
-  .gallery__title {
+  .gallery__title,
+  .blog__title {
     margin: 0 0 22.5px;
   }
   .gallery-item {
@@ -423,8 +521,13 @@ a:focus {
 
 @media (max-width: 767px) {
   .features__description,
-  .gallery__description {
+  .gallery__description,
+  .blog__description {
     margin-bottom: 30px;
+  }
+  .blog-item__image img {
+    margin-top: -10%;
+    margin-bottom: -35%;
   }
 }
 
