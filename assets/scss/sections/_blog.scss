@@ -14,14 +14,16 @@
 
 .blog-item {
   &__image {
-    padding: 0;
     overflow: hidden;
+
+    padding: 0;
 
     img {
       width: 100%;
-      filter: saturate(0.75);
+
       transition: filter 0.5s, transform 0.5s;
 
+      filter: saturate(0.75);
       @include md {
         margin-top: -10%;
         margin-bottom: -35%;
@@ -30,22 +32,28 @@
   }
 
   &__post {
-    background-color: $color-light;
     padding-top: $gap;
     padding-bottom: $gap;
+
     transition: background-color 0.25s;
+
+    background-color: $color-light;
   }
 
   &__date {
     margin: $gap 0;
-    font-size: 0.875rem;
+
     color: lighten($color-gray, 10%);
+
+    font-size: 0.875rem;
   }
 
   &__excerpt {
-    color: $color-gray;
-    font-size: 0.875rem;
     margin: $gap 0 ($gap * 2);
+
+    color: $color-gray;
+
+    font-size: 0.875rem;
   }
 
   a {
@@ -53,8 +61,9 @@
     &:focus {
       .blog-item__image {
         img {
-          filter: saturate(1.5);
           transform: scale(1.25);
+
+          filter: saturate(1.5);
         }
       }
 
@@ -75,4 +84,4 @@
       }
     }
   }
-}
+}

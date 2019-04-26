@@ -17,7 +17,12 @@
   margin-bottom: $gap / 2;
 
   &__icon {
-    @include icon;
+    @include md-min {
+      @include icon;
+    }
+    @include md {
+      @include icon(34px, 1.5rem);
+    }
   }
 
   &__title {
