@@ -10,6 +10,11 @@
   &__description {
     @extend %section-description;
   }
+
+  > .container {
+    padding-left: $gap * 2;
+    padding-right: $gap * 2;
+  }
 }
 
 .blog-item {
@@ -84,4 +89,4 @@
       }
     }
   }
-}
+}
