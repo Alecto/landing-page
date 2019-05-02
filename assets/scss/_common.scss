@@ -9,6 +9,11 @@ body {
   font-family: $font-main;
 }
 
+section {
+  width: 100%;
+  overflow: hidden;
+}
+
 h1 {
   @extend %header;
 }
@@ -48,4 +53,4 @@ a {
 
     color: $color-accent;
   }
-}
+}

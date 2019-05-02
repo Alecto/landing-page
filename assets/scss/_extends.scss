@@ -6,9 +6,7 @@
 
 %section {
   display: flex;
-
   min-height: 100vh;
-  overflow: hidden;
   flex-wrap: wrap;
   align-content: center;
   @include lg-min {
