@@ -17,6 +17,7 @@ h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  overflow: hidden;
 
   min-height: 100vh;
 
