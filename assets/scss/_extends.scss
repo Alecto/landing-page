@@ -10,7 +10,7 @@
   min-height: 100vh;
 
   flex-wrap: wrap;
-  align-items: center;
+  align-content: center;
   @include lg-min {
     padding: ($gap * 7) 0 ($gap * 6);
   }

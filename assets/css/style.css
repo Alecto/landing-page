@@ -12,7 +12,8 @@ h6 {
 .about,
 .features,
 .gallery,
-.blog {
+.blog,
+.contacts {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -21,23 +22,24 @@ h6 {
 
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
 }
 
 .about__title,
 .features__title,
 .gallery__title,
 .blog__title,
-.advantages__title {
+.advantages__title,
+.contacts__title {
   text-align: center;
 }
 
 .features__description,
 .gallery__description,
 .blog__description,
-.advantages__description {
+.advantages__description,
+.contacts__description {
   text-align: center;
 }
 
@@ -102,6 +104,17 @@ h6 {
 
 .bg-danger {
   background-color: #ee3b24 !important;
+}
+
+.btn-danger {
+  color: #ee3b24;
+  border-color: #ee3b24 !important;
+  background-color: transparent;
+}
+
+.btn-danger:hover,
+.btn-danger:focus {
+  background-color: #ee3b24;
 }
 
 .header-navbar {
@@ -414,7 +427,8 @@ a:focus {
   .about,
   .features,
   .gallery,
-  .blog {
+  .blog,
+  .contacts {
     padding: 90px 0 60px;
   }
   .advantages__content {
@@ -425,7 +439,8 @@ a:focus {
   .features__title,
   .gallery__title,
   .blog__title,
-  .advantages__title {
+  .advantages__title,
+  .contacts__title {
     margin: 0 0 30px;
   }
   .advantages .container-fluid {
@@ -452,7 +467,8 @@ a:focus {
   .about,
   .features,
   .gallery,
-  .blog {
+  .blog,
+  .contacts {
     padding: 105px 0 75px;
   }
   .advantages__content {
@@ -463,7 +479,8 @@ a:focus {
   .features__title,
   .gallery__title,
   .blog__title,
-  .advantages__title {
+  .advantages__title,
+  .contacts__title {
     margin: 0 0 37.5px;
   }
   .advantages .container-fluid {
@@ -475,7 +492,8 @@ a:focus {
   .features__description,
   .gallery__description,
   .blog__description,
-  .advantages__description {
+  .advantages__description,
+  .contacts__description {
     margin-bottom: 45px;
   }
   .feature-item__icon {
@@ -523,7 +541,8 @@ a:focus {
   .about,
   .features,
   .gallery,
-  .blog {
+  .blog,
+  .contacts {
     padding: 105px 0 90px;
   }
   .advantages__content {
@@ -534,7 +553,8 @@ a:focus {
   .features__title,
   .gallery__title,
   .blog__title,
-  .advantages__title {
+  .advantages__title,
+  .contacts__title {
     margin: 0 0 45px;
   }
   .header-navbar--scrolled .active .nav-link::after {
@@ -586,7 +606,8 @@ a:focus {
   .about,
   .features,
   .gallery,
-  .blog {
+  .blog,
+  .contacts {
     padding: 90px 0 45px;
   }
   .advantages__content {
@@ -597,7 +618,8 @@ a:focus {
   .features__title,
   .gallery__title,
   .blog__title,
-  .advantages__title {
+  .advantages__title,
+  .contacts__title {
     margin: 0 0 22.5px;
   }
   .gallery-item {
@@ -614,7 +636,8 @@ a:focus {
   .features__description,
   .gallery__description,
   .blog__description,
-  .advantages__description {
+  .advantages__description,
+  .contacts__description {
     margin-bottom: 30px;
   }
   .feature-item__icon {

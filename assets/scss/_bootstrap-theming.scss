@@ -40,3 +40,14 @@
 .bg-danger {
   background-color: $color-accent !important;
 }
+
+.btn-danger {
+  background-color: transparent;
+  border-color: $color-accent !important;
+  color: $color-accent;
+
+  &:hover,
+  &:focus {
+    background-color: $color-accent;
+  }
+}
