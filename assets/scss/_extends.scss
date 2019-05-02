@@ -25,6 +25,25 @@
   }
 }
 
+%section-content {
+  @include lg-min {
+    padding-top: $gap * 7;
+    padding-bottom: $gap * 6;
+  }
+  @include lg-md {
+    padding-top: $gap * 7;
+    padding-bottom: $gap * 5;
+  }
+  @include md-sm {
+    padding-top: $gap * 6;
+    padding-bottom: $gap * 4;
+  }
+  @include sm {
+    padding-top: $gap * 6;
+    padding-bottom: $gap * 3;
+  }
+}
+
 %section-title {
   text-align: center;
 
