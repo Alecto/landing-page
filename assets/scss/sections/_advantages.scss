@@ -11,6 +11,7 @@
 
   &__image {
     min-height: 100vh;
+
     background-position: 33% 50%;
     background-size: cover;
 
@@ -21,23 +22,24 @@
 
   &__content {
     @extend %section-content;
-
     @include xl-min {
       > .row {
-        margin-left: $gap;
         margin-right: $gap;
+        margin-left: $gap;
       }
     }
     @include xl {
       > .row {
-        margin-left: 0;
         margin-right: 0;
+        margin-left: 0;
       }
     }
     @include lg-min {
-      align-content: center;
       display: flex;
+
       min-height: 100vh;
+
+      align-content: center;
       flex-wrap: wrap;
     }
   }
@@ -50,7 +52,6 @@
       max-width: 540px;
     }
   }
-
 }
 
 .advantage-item {
@@ -63,17 +64,21 @@
 
     i {
       margin-top: $gap / 2;
-      color: $color-accent;
+
       text-align: center;
+
+      color: $color-accent;
 
       @include sm-min {
         width: 60px;
+
         font-size: 2.75rem;
       }
       @include sm {
         width: 35px;
+
         font-size: 2rem;
       }
     }
   }
-}
+}

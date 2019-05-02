@@ -1,6 +1,5 @@
 .gallery {
   @extend %section;
-
   @include sm-min {
     .container-fluid {
       padding-right: $gap * 2;
@@ -26,10 +25,11 @@
   }
 
   &__wrapper {
-    max-height: 30vh;
     position: relative;
 
     overflow: hidden;
+
+    max-height: 30vh;
   }
 
   &__image {
