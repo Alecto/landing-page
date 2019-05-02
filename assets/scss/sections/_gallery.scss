@@ -18,7 +18,7 @@
 
 .gallery-item {
   @include sm-min {
-    padding: 0 ($gap / 3 * 2) (($gap / 3 * 4));
+    padding: 0 ($gap / 3 * 2) ($gap / 3 * 4);
   }
   @include sm {
     padding: 0 15px 15px;
