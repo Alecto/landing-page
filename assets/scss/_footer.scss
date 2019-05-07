@@ -23,11 +23,12 @@
 
       margin-left: -30px;
 
-      content: "\f178";
+      content: "\f30b";
 
       color: darken($color-light, 30%);
 
       font-family: $font-icon;
+      font-weight: 900;
     }
   }
 
@@ -57,4 +58,4 @@
 
     background-color: lighten($color-dark, 20%);
   }
-}
+}

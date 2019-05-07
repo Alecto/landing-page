@@ -501,11 +501,12 @@ a:focus {
 
   margin-left: -30px;
 
-  content: "\f178";
+  content: "\f30b";
 
   color: #b2b2b2;
 
-  font-family: "FontAwesome";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
 }
 
 .footer p {
