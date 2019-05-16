@@ -18,10 +18,10 @@
 
 .gallery-item {
   @include sm-min {
-    padding: 0 ($gap / 3 * 2) ($gap / 3 * 4);
+    padding: 0 ($gap / 3) ($gap / 3 * 2);
   }
   @include sm {
-    padding: 0 15px 15px;
+    padding: 0 $gap $gap;
   }
 
   &__wrapper {
@@ -29,7 +29,8 @@
 
     overflow: hidden;
 
-    max-height: 30vh;
+    min-height: 200px;
+    max-height: 33.33vh;
   }
 
   &__image {

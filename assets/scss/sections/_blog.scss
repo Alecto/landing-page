@@ -54,11 +54,16 @@
   }
 
   &__excerpt {
-    margin: $gap 0 ($gap * 2);
-
     color: $color-gray;
 
     font-size: 0.875rem;
+
+    @include md-min {
+      margin: $gap 0 0;
+    }
+    @include md {
+      margin: $gap 0 ($gap * 2);
+    }
   }
 
   a {

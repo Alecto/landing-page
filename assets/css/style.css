@@ -260,7 +260,8 @@ a:focus {
 
   overflow: hidden;
 
-  max-height: 30vh;
+  min-height: 200px;
+  max-height: 33.33vh;
 }
 
 .gallery-item__image {
@@ -408,8 +409,6 @@ a:focus {
 }
 
 .blog-item__excerpt {
-  margin: 15px 0 30px;
-
   color: #545454;
 
   font-size: 0.875rem;
@@ -567,7 +566,7 @@ a:focus {
     padding-left: 30px;
   }
   .gallery-item {
-    padding: 0 10px 20px;
+    padding: 0 5px 10px;
   }
   .advantage-item__icon i {
     width: 60px;
@@ -647,6 +646,9 @@ a:focus {
     border-top: 25px solid #ee3b24;
     border-right: 40px solid transparent;
     border-left: 40px solid transparent;
+  }
+  .blog-item__excerpt {
+    margin: 15px 0 0;
   }
 }
 
@@ -795,6 +797,9 @@ a:focus {
   .blog-item__image img {
     margin-top: -10%;
     margin-bottom: -35%;
+  }
+  .blog-item__excerpt {
+    margin: 15px 0 30px;
   }
 }
 
