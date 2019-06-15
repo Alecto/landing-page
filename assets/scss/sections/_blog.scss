@@ -37,12 +37,22 @@
   }
 
   &__post {
+    position: relative;
+    z-index: 0;
+
     padding-top: $gap;
     padding-bottom: $gap;
 
-    transition: background-color 0.25s;
-
     background-color: $color-light;
+
+    &::before {
+      z-index: -1;
+
+      content: "";
+      transition: background-color 0.25s;
+
+      @include abs-position;
+    }
   }
 
   &__date {
@@ -78,7 +88,9 @@
       }
 
       .blog-item__post {
-        background-color: $color-accent;
+        &::before {
+          background-color: $color-accent;
+        }
       }
 
       .blog-item__title {

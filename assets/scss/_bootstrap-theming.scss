@@ -1,5 +1,5 @@
 .navbar-expand-lg {
-  @include lg {
+  @include lg-sm {
     > .container,
     > .container-fluid {
       padding-right: $gap;
@@ -17,6 +17,10 @@
       padding-left: $gap / 2;
 
       color: $color-light;
+
+      @include lg {
+        text-align: center;
+      }
     }
   }
 }

@@ -40,12 +40,6 @@
   }
 
   &__caption {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-
     padding: $gap * 2;
 
     transition: opacity 0.5s;
@@ -53,6 +47,8 @@
 
     opacity: 0;
     background-color: rgba($color-dark, 0.75);
+
+    @include abs-position;
   }
 
   &__title {
