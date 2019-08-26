@@ -226,8 +226,10 @@ a:focus {
   left: 0;
 }
 
-.slider h3 {
+.slider__title {
   color: #fefefe;
+
+  font-size: 1.75rem;
 }
 
 .about__item {
@@ -238,16 +240,16 @@ a:focus {
   background-color: #e5e5e5;
 }
 
-.feature-item {
-  margin-top: 7.5px;
+.feature {
   margin-bottom: 7.5px;
+  padding-top: 7.5px;
 }
 
-.feature-item__title {
+.feature__title {
   text-align: center;
 }
 
-.feature-item__description {
+.feature__description {
   text-align: center;
 }
 
@@ -567,44 +569,28 @@ a:focus {
   .contacts__description {
     margin-bottom: 45px;
   }
-  .feature-item__icon {
-    position: relative;
-
-    display: block;
+  .feature__icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
 
     width: 80px;
-    height: 40px;
+    height: 90px;
     margin: 30px auto 60px;
-
-    text-align: center;
 
     color: #ffffff;
     background: #ee3b24;
 
     font-size: 2rem;
-    line-height: 40px;
-  }
-  .feature-item__icon::before {
-    position: absolute;
-    top: -25px;
-    left: 0;
 
-    content: "";
-
-    border-right: 40px solid transparent;
-    border-bottom: 25px solid #ee3b24;
-    border-left: 40px solid transparent;
-  }
-  .feature-item__icon::after {
-    position: absolute;
-    bottom: -25px;
-    left: 0;
-
-    content: "";
-
-    border-top: 25px solid #ee3b24;
-    border-right: 40px solid transparent;
-    border-left: 40px solid transparent;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
   }
   .blog-item__excerpt {
     margin: 15px 0 0;
@@ -659,10 +645,6 @@ a:focus {
     padding: 0;
 
     background-color: rgba(1, 1, 1, 0.85);
-  }
-  .header-navbar--scrolled .nav-item {
-    margin-top: 0;
-    margin-bottom: 0;
   }
   .advantages__content {
     display: -webkit-box;
@@ -757,44 +739,28 @@ a:focus {
   .contacts__description {
     margin-bottom: 30px;
   }
-  .feature-item__icon {
-    position: relative;
-
-    display: block;
+  .feature__icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
 
     width: 68px;
-    height: 34px;
+    height: 76.5px;
     margin: 25.5px auto 51px;
-
-    text-align: center;
 
     color: #ffffff;
     background: #ee3b24;
 
     font-size: 1.5rem;
-    line-height: 34px;
-  }
-  .feature-item__icon::before {
-    position: absolute;
-    top: -21.25px;
-    left: 0;
 
-    content: "";
-
-    border-right: 34px solid transparent;
-    border-bottom: 21.25px solid #ee3b24;
-    border-left: 34px solid transparent;
-  }
-  .feature-item__icon::after {
-    position: absolute;
-    bottom: -21.25px;
-    left: 0;
-
-    content: "";
-
-    border-top: 21.25px solid #ee3b24;
-    border-right: 34px solid transparent;
-    border-left: 34px solid transparent;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
   }
   .blog-item__image img {
     margin-top: -10%;

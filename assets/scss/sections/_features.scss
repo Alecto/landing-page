@@ -12,9 +12,9 @@
   }
 }
 
-.feature-item {
-  margin-top: $gap / 2;
+.feature {
   margin-bottom: $gap / 2;
+  padding-top: $gap / 2;
 
   &__icon {
     @include md-min {

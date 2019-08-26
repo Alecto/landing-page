@@ -10,7 +10,9 @@
     @include abs-position;
   }
 
-  h3 {
+  &__title {
     color: $color-light;
+
+    font-size: 1.75rem;
   }
-}
+}

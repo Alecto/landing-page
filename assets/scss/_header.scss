@@ -34,13 +34,6 @@
     background-color: rgba($color-dark, 0.85);
   }
 
-  .nav-item {
-    @include lg-min {
-      margin-top: 0;
-      margin-bottom: 0;
-    }
-  }
-
   .active {
     .nav-link {
       color: $color-accent !important;
@@ -49,4 +42,4 @@
       @extend %link-border-active;
     }
   }
-}
+}
