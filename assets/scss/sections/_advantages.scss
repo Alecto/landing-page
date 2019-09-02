@@ -21,26 +21,18 @@
   }
 
   &__content {
-    @extend %section-content;
+    @extend %section;
     @include xl-min {
       > .row {
         margin-right: $gap;
         margin-left: $gap;
       }
     }
-    @include xl {
+    @include xl-lg {
       > .row {
         margin-right: 0;
         margin-left: 0;
       }
-    }
-    @include lg-min {
-      display: flex;
-
-      min-height: 100vh;
-
-      align-content: center;
-      flex-wrap: wrap;
     }
   }
 
@@ -81,4 +73,4 @@
       }
     }
   }
-}
+}

@@ -12,21 +12,6 @@
   flex-wrap: wrap;
   align-content: center;
   @include lg-min {
-    padding: ($gap * 7) 0 ($gap * 6);
-  }
-  @include lg-md {
-    padding: ($gap * 7) 0 ($gap * 5);
-  }
-  @include md-sm {
-    padding: ($gap * 6) 0 ($gap * 4);
-  }
-  @include sm {
-    padding: ($gap * 6) 0 ($gap * 3);
-  }
-}
-
-%section-content {
-  @include lg-min {
     padding-top: $gap * 7;
     padding-bottom: $gap * 6;
   }
@@ -177,4 +162,4 @@
       top: 5px;
     }
   }
-}
+}

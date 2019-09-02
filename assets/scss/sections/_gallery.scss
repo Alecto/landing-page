@@ -40,8 +40,6 @@
   }
 
   &__caption {
-    padding: $gap * 2;
-
     transition: opacity 0.5s;
     text-align: center;
 
@@ -53,10 +51,11 @@
 
   &__title {
     position: absolute;
-    bottom: -100%;
-    left: 0;
+    right: $gap * 2;
+    bottom: -50%;
+    left: $gap * 2;
 
-    width: 100%;
+    margin-bottom: 0;
 
     transition: bottom 0.5s;
 
@@ -66,13 +65,15 @@
   }
 
   &__link {
+    position: relative;
+    top: -50%;
+
     display: inline-flex;
 
     width: $gap * 3;
     height: $gap * 3;
 
-    transition: transform 0.5s;
-    transform: translateY(-100px);
+    transition: top 0.5s;
 
     color: $color-light;
     background-color: $color-accent;
@@ -100,7 +101,7 @@
     }
 
     .gallery-item__link {
-      transform: translateY($gap);
+      top: 15%;
     }
   }
-}
+}

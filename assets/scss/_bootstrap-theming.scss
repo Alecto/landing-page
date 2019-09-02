@@ -45,13 +45,12 @@
   background-color: $color-accent !important;
 }
 
-.btn-danger {
+.btn-outline-danger {
   color: $color-accent;
   border-color: $color-accent !important;
-  background-color: transparent;
 
   &:hover,
   &:focus {
     background-color: $color-accent;
   }
-}
+}

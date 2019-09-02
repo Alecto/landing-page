@@ -76,21 +76,17 @@
     }
   }
 
-  a {
+  &__link {
     &:hover,
     &:focus {
-      .blog-item__image {
-        img {
-          transform: scale(1.25);
+      .blog-item__image img {
+        transform: scale(1.25);
 
-          filter: saturate(1.5);
-        }
+        filter: saturate(1.5);
       }
 
-      .blog-item__post {
-        &::before {
-          background-color: $color-accent;
-        }
+      .blog-item__post::before {
+        background-color: $color-accent;
       }
 
       .blog-item__title {
@@ -106,4 +102,4 @@
       }
     }
   }
-}
+}

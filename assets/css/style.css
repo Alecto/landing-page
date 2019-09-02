@@ -13,6 +13,7 @@ h6 {
 .features,
 .gallery,
 .blog,
+.advantages__content,
 .contacts {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -147,14 +148,13 @@ h6 {
   background-color: #ee3b24 !important;
 }
 
-.btn-danger {
+.btn-outline-danger {
   color: #ee3b24;
   border-color: #ee3b24 !important;
-  background-color: transparent;
 }
 
-.btn-danger:hover,
-.btn-danger:focus {
+.btn-outline-danger:hover,
+.btn-outline-danger:focus {
   background-color: #ee3b24;
 }
 
@@ -279,8 +279,6 @@ a:focus {
   bottom: 0;
   left: 0;
 
-  padding: 30px;
-
   -webkit-transition: opacity 0.5s;
        -o-transition: opacity 0.5s;
           transition: opacity 0.5s;
@@ -292,10 +290,11 @@ a:focus {
 
 .gallery-item__title {
   position: absolute;
-  bottom: -100%;
-  left: 0;
+  right: 30px;
+  bottom: -50%;
+  left: 30px;
 
-  width: 100%;
+  margin-bottom: 0;
 
   -webkit-transition: bottom 0.5s;
        -o-transition: bottom 0.5s;
@@ -307,6 +306,9 @@ a:focus {
 }
 
 .gallery-item__link {
+  position: relative;
+  top: -50%;
+
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -314,14 +316,9 @@ a:focus {
   width: 45px;
   height: 45px;
 
-  -webkit-transition: -webkit-transform 0.5s;
-       -o-transition:         transform 0.5s;
-          transition: -webkit-transform 0.5s;
-          transition:         transform 0.5s;
-          transition:         transform 0.5s, -webkit-transform 0.5s;
-  -webkit-transform: translateY(-100px);
-      -ms-transform: translateY(-100px);
-          transform: translateY(-100px);
+  -webkit-transition: top 0.5s;
+       -o-transition: top 0.5s;
+          transition: top 0.5s;
 
   color: #fefefe;
   background-color: #ee3b24;
@@ -354,9 +351,7 @@ a:focus {
 }
 
 .gallery-item:hover .gallery-item__link {
-  -webkit-transform: translateY(15px);
-      -ms-transform: translateY(15px);
-          transform: translateY(15px);
+  top: 15%;
 }
 
 .blog {
@@ -425,8 +420,8 @@ a:focus {
   font-size: 0.875rem;
 }
 
-.blog-item a:hover .blog-item__image img,
-.blog-item a:focus .blog-item__image img {
+.blog-item__link:hover .blog-item__image img,
+.blog-item__link:focus .blog-item__image img {
   -webkit-transform: scale(1.25);
       -ms-transform: scale(1.25);
           transform: scale(1.25);
@@ -435,23 +430,23 @@ a:focus {
           filter: saturate(1.5);
 }
 
-.blog-item a:hover .blog-item__post::before,
-.blog-item a:focus .blog-item__post::before {
+.blog-item__link:hover .blog-item__post::before,
+.blog-item__link:focus .blog-item__post::before {
   background-color: #ee3b24;
 }
 
-.blog-item a:hover .blog-item__title,
-.blog-item a:focus .blog-item__title {
+.blog-item__link:hover .blog-item__title,
+.blog-item__link:focus .blog-item__title {
   color: #fefefe;
 }
 
-.blog-item a:hover .blog-item__date,
-.blog-item a:focus .blog-item__date {
+.blog-item__link:hover .blog-item__date,
+.blog-item__link:focus .blog-item__date {
   color: #fefefe;
 }
 
-.blog-item a:hover .blog-item__excerpt,
-.blog-item a:focus .blog-item__excerpt {
+.blog-item__link:hover .blog-item__excerpt,
+.blog-item__link:focus .blog-item__excerpt {
   color: #fefefe;
 }
 
@@ -602,10 +597,8 @@ a:focus {
   .features,
   .gallery,
   .blog,
+  .advantages__content,
   .contacts {
-    padding: 105px 0 90px;
-  }
-  .advantages__content {
     padding-top: 105px;
     padding-bottom: 90px;
   }
@@ -646,18 +639,6 @@ a:focus {
 
     background-color: rgba(1, 1, 1, 0.85);
   }
-  .advantages__content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-
-    min-height: 100vh;
-
-    -ms-flex-line-pack: center;
-    align-content: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
 }
 
 @media (min-width: 1200px) {
@@ -667,7 +648,7 @@ a:focus {
   }
 }
 
-@media (max-width: 1199.8px) {
+@media (max-width: 1199.8px) and (min-width: 992px) {
   .advantages__content > .row {
     margin-right: 0;
     margin-left: 0;
@@ -711,10 +692,8 @@ a:focus {
   .features,
   .gallery,
   .blog,
+  .advantages__content,
   .contacts {
-    padding: 105px 0 75px;
-  }
-  .advantages__content {
     padding-top: 105px;
     padding-bottom: 75px;
   }
@@ -776,10 +755,8 @@ a:focus {
   .features,
   .gallery,
   .blog,
+  .advantages__content,
   .contacts {
-    padding: 90px 0 60px;
-  }
-  .advantages__content {
     padding-top: 90px;
     padding-bottom: 60px;
   }
@@ -801,10 +778,8 @@ a:focus {
   .features,
   .gallery,
   .blog,
+  .advantages__content,
   .contacts {
-    padding: 90px 0 45px;
-  }
-  .advantages__content {
     padding-top: 90px;
     padding-bottom: 45px;
   }
