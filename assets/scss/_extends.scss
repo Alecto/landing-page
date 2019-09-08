@@ -134,7 +134,7 @@
   width: $gap * 3;
   height: $gap * 3;
 
-  transition: 0.3s;
+  transition: opacity 0.3s;
 
   opacity: 0.2;
   border-bottom: none;
@@ -147,7 +147,7 @@
 
     margin: 0;
 
-    transition: 0.3s;
+    transition: top 0.3s;
 
     color: $color-light;
 
